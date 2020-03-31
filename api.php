@@ -1,7 +1,8 @@
 <?php
 require 'vendor/autoload.php';
+//https://pomber.github.io/covid19/timeseries.json
 
-function ReturnCovid19Smmary()
+function ReturnCovid19Summary()
 {
     $url = "https://corona.lmao.ninja/all";
     $client = new GuzzleHttp\Client();
@@ -16,7 +17,6 @@ function ReturnAllCases()
     $res = $client->request('GET', $url);
     $data = $res->getBody()->getContents();
     return $data;
-
 }
 
 function ReturnCasesByCountryName($CountryName)
@@ -45,7 +45,25 @@ function ReturnCasesByCountryISO2($CountryISO2)
 }
 function ReturnCasesByCountryISO3($CountryISO3)
 {
-   $url = "https://corona.lmao.ninja/countries/".$CountryISO2;
+   $url = "https://corona.lmao.ninja/countries/".$CountryISO3;
+    $client = new GuzzleHttp\Client();
+    $res = $client->request('GET', $url);
+    $data = $res->getBody()->getContents();
+    return $data;
+}
+
+//Historical data
+function ReturnAllHistoricalData()
+{
+   $url = "https://corona.lmao.ninja/v2/historical/";
+    $client = new GuzzleHttp\Client();
+    $res = $client->request('GET', $url);
+    $data = $res->getBody()->getContents();
+    return $data;
+}
+function ReturnHistoricalDataByCountry($CountryName)
+{
+   $url = "https://corona.lmao.ninja/v2/historical/".$CountryName;
     $client = new GuzzleHttp\Client();
     $res = $client->request('GET', $url);
     $data = $res->getBody()->getContents();
