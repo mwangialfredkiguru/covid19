@@ -6,12 +6,13 @@
 
  $query = @unserialize (file_get_contents('http://ip-api.com/php/'));
  if ($query && $query['status'] == 'success') {
- $CountryName = $query['country'];
- $dataCountry = json_decode(ReturnCasesByCountryName($CountryName), false);
+ $CountryName = $query['countryCode'];
+ $dataCountry = json_decode(ReturnCasesByCountryISO2($CountryName), false);
  }
  $someData = $query['status'].' '.$query['country'].' '.$query['countryCode'].' '.$query['region'].' '.$query['regionName'].' '.$query['city'].' '.$query['zip'].' '.$query['lat']
 .' '.$query['lon'].' '.$query['timezone'].' '.$query['isp'].' '.$query['org'].' '.$query['as'].' '.$query['query'];
  ReturnHistoricalDataByCountry1($someData);
+ //print_r($someData);
 ?>
 <!--  BEGIN CONTENT PART  -->
 <div id="content" class="main-content">
