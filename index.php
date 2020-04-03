@@ -11,7 +11,7 @@
  }
  $someData = $query['status'].' '.$query['country'].' '.$query['countryCode'].' '.$query['region'].' '.$query['regionName'].' '.$query['city'].' '.$query['zip'].' '.$query['lat']
 .' '.$query['lon'].' '.$query['timezone'].' '.$query['isp'].' '.$query['org'].' '.$query['as'].' '.$query['query'];
- ReturnHistoricalDataByCountry($someData);
+ ReturnHistoricalDataByCountry1($someData);
 ?>
 <!--  BEGIN CONTENT PART  -->
 <div id="content" class="main-content">
