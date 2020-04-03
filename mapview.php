@@ -19,7 +19,7 @@
                             <a href="#mapSouthAmerica" class="nav-link">South America</a>
                         </div>
                     </div> -->
-                
+
                     <div class="row">
                         <div id="mapWorld" class="col-lg-12 layout-top-spacing layout-spacing">
                             <div class="statbox widget box box-shadow">
@@ -34,7 +34,7 @@
                                     <div id="world-map" style="height: 400px"></div>
 
                                     <div class="code-section-container show-code">
-                                                
+
                                         <button class="btn toggle-code-snippet"><span>Code</span></button>
 
                                         <div class="code-section text-left">
@@ -90,7 +90,7 @@ $('#world-map').vectorMap({
                                     <div id="continents-map" style="height: 400px"></div>
 
                                     <div class="code-section-container">
-                                                
+
                                         <button class="btn toggle-code-snippet"><span>Code</span></button>
 
                                         <div class="code-section text-left">
@@ -124,7 +124,7 @@ $('#continents-map').vectorMap({
                                     <div id="africa-map" style="height: 400px"></div>
 
                                     <div class="code-section-container">
-                                                
+
                                         <button class="btn toggle-code-snippet"><span>Code</span></button>
 
                                         <div class="code-section text-left">
@@ -159,7 +159,7 @@ $('#africa-map').vectorMap({
                                     <div id="asia-map" style="height: 400px"></div>
 
                                     <div class="code-section-container">
-                                                
+
                                         <button class="btn toggle-code-snippet"><span>Code</span></button>
 
                                         <div class="code-section text-left">
@@ -193,7 +193,7 @@ $('#asia-map').vectorMap({
                                     <div id="north_america-map" style="height: 400px"></div>
 
                                     <div class="code-section-container">
-                                                
+
                                         <button class="btn toggle-code-snippet"><span>Code</span></button>
 
                                         <div class="code-section text-left">
@@ -227,7 +227,7 @@ $('#north_america-map').vectorMap({
                                     <div id="oceanina-map" class="mx-sm-5" style="height: 400px;"></div>
 
                                     <div class="code-section-container">
-                                                
+
                                         <button class="btn toggle-code-snippet"><span>Code</span></button>
 
                                         <div class="code-section text-left">
@@ -261,7 +261,7 @@ $('#oceanina-map').vectorMap({
                                     <div id="europe-map" style="height: 400px"></div>
 
                                     <div class="code-section-container">
-                                                
+
                                         <button class="btn toggle-code-snippet"><span>Code</span></button>
 
                                         <div class="code-section text-left">
@@ -295,7 +295,7 @@ $('#europe-map').vectorMap({
                                     <div id="south-america-map" style="height: 400px"></div>
 
                                     <div class="code-section-container">
-                                                
+
                                         <button class="btn toggle-code-snippet"><span>Code</span></button>
 
                                         <div class="code-section text-left">
@@ -316,19 +316,9 @@ $('#south-america-map').vectorMap({
                             </div>
                         </div>
                     </div>
-                    
-                </div>
-                </div>
 
-                
-        <div class="footer-wrapper">
-                <div class="footer-section f-section-1">
-                    <p class="">Copyright © 2020 <a target="_blank" href="https://designreset.com/">DesignReset</a>, All rights reserved.</p>
                 </div>
-                <div class="footer-section f-section-2">
-                    <p class="">Coded with <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></p>
                 </div>
-            </div>
         </div>
         <!--  END CONTENT AREA  -->
 
