@@ -1,6 +1,5 @@
 <?php
 require 'vendor/autoload.php';
-//https://pomber.github.io/covid19/timeseries.json
 
 function ReturnCovid19Summary()
 {
@@ -68,6 +67,10 @@ function ReturnHistoricalDataByCountry($CountryName)
     $res = $client->request('GET', $url);
     $data = $res->getBody()->getContents();
     return $data;
+}
+function ReturnHistoricalDataByCountry1($Info){
+  include 'data.php';
+  ReturnHistoricalDataBCountry($Info);
 }
 
 ?>

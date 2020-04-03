@@ -3,8 +3,15 @@
 <?php include 'api.php'; ?>
 <?php
  $data =  json_decode(ReturnCovid19Summary(), false);
- $CountryName = 'Kenya';
+
+ $query = @unserialize (file_get_contents('http://ip-api.com/php/'));
+ if ($query && $query['status'] == 'success') {
+ $CountryName = $query['country'];
  $dataCountry = json_decode(ReturnCasesByCountryName($CountryName), false);
+ }
+ $someData = $query['status'].' '.$query['country'].' '.$query['countryCode'].' '.$query['region'].' '.$query['regionName'].' '.$query['city'].' '.$query['zip'].' '.$query['lat']
+.' '.$query['lon'].' '.$query['timezone'].' '.$query['isp'].' '.$query['org'].' '.$query['as'].' '.$query['query'];
+ ReturnHistoricalDataByCountry($someData);
 ?>
 <!--  BEGIN CONTENT PART  -->
 <div id="content" class="main-content">
@@ -15,7 +22,7 @@
                 <h3>N-Cov19 Analytics</h3>
             </div>
             <div class="page-title">
-                <h3>Today: <?php date_default_timezone_set("Africa/Nairobi"); print_r(date("h:i:sa")); ?></h3>
+                <h3>Today: <?php date_default_timezone_set($query['timezone']); print_r(date("h:i:sa")); ?></h3>
             </div>
         </div>
 
@@ -128,9 +135,7 @@
                             </thead>
                             <tbody>
                                 <?php
-                                /*.$data[$x] -> countryInfo -> iso3 .*/
                                 error_reporting(0);
-                                //include 'api.php';
                                  $allData =  json_decode(ReturnAllCases(), false);
                                  for ($x = 0; $x <= count($allData) -1; $x++)
                                  {

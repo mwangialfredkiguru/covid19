@@ -29,7 +29,6 @@
                                     <tbody>
 
                                         <?php
-                                        /*.$data[$x] -> countryInfo -> iso3 .*/
                                         error_reporting(0);
                                         include 'api.php';
                                          $data =  json_decode(ReturnAllCases(), false);
