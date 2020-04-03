@@ -30,7 +30,7 @@ try {
         ======================================
     */
 
-    
+
     // Total Visits
 
     var spark1 = {
@@ -227,7 +227,7 @@ try {
         }
         ]
     }
-    
+
 
     /*
         ===================================
@@ -236,10 +236,10 @@ try {
     */
 
     $(document).ready(function(){
-      alert('ready');
+      //alert('ready');
     });
 
-    var d_1options1 = 
+    var d_1options1 =
     {
       chart: {
           height: 350,
@@ -261,7 +261,7 @@ try {
           bar: {
               horizontal: false,
               columnWidth: '55%',
-              endingShape: 'rounded'  
+              endingShape: 'rounded'
           },
       },
       dataLabels: {
@@ -452,7 +452,7 @@ try {
       },
     }
 
-    
+
 
 
     /*
