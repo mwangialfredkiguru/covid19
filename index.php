@@ -23,7 +23,9 @@
                 <h3>N-Cov19 Analytics</h3>
             </div>
             <div class="page-title">
-                <h3>Today: <?php date_default_timezone_set($query['timezone']); print_r(date("h:i:sa")); ?></h3>
+                <h3>Today: <?php /*date_default_timezone_set($query['timezone']); Africa/Nairobi*/
+                date_default_timezone_set('Africa/Nairobi');
+                 print_r(date("h:i:sa")); ?></h3>
             </div>
         </div>
 
