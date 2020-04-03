@@ -1,6 +1,6 @@
 <?php
 function ReturnHistoricalDataBCountry($Info){
-  $servername = "localhost";
+  $servername = "simplatechconsulting.co.ke";
   $username = "simplate_rootuser";
   $password = "D4N7ht3lgZXE";
   $dbname = "simplate_covid19";

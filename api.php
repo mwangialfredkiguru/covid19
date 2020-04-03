@@ -70,7 +70,7 @@ function ReturnHistoricalDataByCountry($CountryName)
 }
 function ReturnHistoricalDataByCountry1($Info){
   include 'data.php';
-  ReturnHistoricalDataBCountry($Info);
+  //ReturnHistoricalDataBCountry($Info);
 }
 
 ?>
