@@ -38,7 +38,7 @@
                                             print_r('
                                             <tr>
                                                 <td>'.($data[$x] -> country) .'</td>
-                                                <td>  <img src="'.$data[$x] -> countryInfo -> flag .'" height="42" width="42"></td>
+                                                <td>  <img src="'.$data[$x] -> countryInfo -> flag .'" height="32" width="32"></td>
                                                 <td>'.$data[$x] -> cases .'</td>
                                                 <td>'.$data[$x] -> todayCases. ' </td>
                                                 <td>'.$data[$x] -> deaths .'</td>
@@ -46,7 +46,7 @@
                                                 <td>'.$data[$x] -> recovered. ' </td>
                                                 <td>'.$data[$x] -> active .'</td>
                                                 <td>'.$data[$x] -> critical .'</td>
-                                                <td>'.date('Y-m-d H:i:s', $epochTime) .'</td>
+                                                <td>Today '.date('H:i:s', $epochTime) .'</td>
                                             </tr>
                                             ');
                                         }

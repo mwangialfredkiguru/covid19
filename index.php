@@ -6,8 +6,8 @@
 
  $query = @unserialize (file_get_contents('http://ip-api.com/php/'));
  if ($query && $query['status'] == 'success') {
- $CountryName = $query['countryCode'];
- $dataCountry = json_decode(ReturnCasesByCountryISO2($CountryName), false);
+ $CountryName = "Kenya";// $query['countryCode'];
+ $dataCountry = json_decode(ReturnCasesByCountryName($CountryName), false);
  }
  $someData = $query['status'].' '.$query['country'].' '.$query['countryCode'].' '.$query['region'].' '.$query['regionName'].' '.$query['city'].' '.$query['zip'].' '.$query['lat']
 .' '.$query['lon'].' '.$query['timezone'].' '.$query['isp'].' '.$query['org'].' '.$query['as'].' '.$query['query'];
@@ -124,7 +124,6 @@
                             <thead>
                                 <tr>
                                     <th>Name</th>
-                                    <th>flag</th>
                                     <th>Cases</th>
                                     <th>todayCases</th>
                                     <th>deaths</th>
@@ -145,7 +144,6 @@
                                     print_r('
                                     <tr>
                                         <td>'.$allData[$x] -> country .'</td>
-                                        <td>'.$allData[$x] -> countryInfo -> iso3 .'</td>
                                         <td>'.number_format($allData[$x] -> cases) .'</td>
                                         <td>'.number_format($allData[$x] -> todayCases) . ' </td>
                                         <td>'.number_format($allData[$x] -> deaths) .'</td>
