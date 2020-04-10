@@ -3,7 +3,17 @@
 ?>
  </div>
     <!-- END MAIN CONTAINER -->
+    <!-- Google Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
     <script src="assets/js/libs/jquery-3.1.1.min.js"></script>
     <script src="bootstrap/js/popper.min.js"></script>
@@ -38,12 +48,12 @@
 
     <!--  BEGIN CUSTOM SCRIPTS FILE  -->
     <script src="plugins/jvector/jvector_script.js"></script>
-    <!--  END CUSTOM SCRIPTS FILE  --> 
+    <!--  END CUSTOM SCRIPTS FILE  -->
 
         <script src="plugins/table/datatable/datatables.js"></script>
     <!-- NOTE TO Use Copy CSV Excel PDF Print Options You Must Include These Files  -->
     <script src="plugins/table/datatable/button-ext/dataTables.buttons.min.js"></script>
-    <script src="plugins/table/datatable/button-ext/jszip.min.js"></script>    
+    <script src="plugins/table/datatable/button-ext/jszip.min.js"></script>
     <script src="plugins/table/datatable/button-ext/buttons.html5.min.js"></script>
     <script src="plugins/table/datatable/button-ext/buttons.print.min.js"></script>
     <script>
@@ -66,9 +76,9 @@
             },
             "stripeClasses": [],
             "lengthMenu": [7, 10, 20, 50],
-            "pageLength": 7 
+            "pageLength": 7
         } );
-    </script>    
+    </script>
 
 </body>
 </html>
