@@ -1,8 +1,23 @@
 <?php include 'header.php'; ?>
 <?php include 'nav.php'; ?>
 
-<iframe width="650" height="400" frameborder="0" scrolling="no"
-  marginheight="0" marginwidth="0" title="2019-nCoV"
-  src="//arcgis.com/apps/Embed/index.html?webmap=14aa9e5660cf42b5b4b546dec6ceec7c&extent=77.3846,11.535,163.5174,52.8632&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light"
-></iframe>
+
+<!--  BEGIN CONTENT AREA  -->
+<div id="content" class="main-content">
+    <div class="layout-px-spacing">
+
+        <div class="row layout-top-spacing" id="cancel-row">
+
+            <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
+              <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map" width="100%" height="600px"></iframe>
+            </div>
+
+        </div>
+
+        </div>
+
+</div>
+<!--  END CONTENT AREA  -->
+
+
 <?php include 'footer.php'; ?>
