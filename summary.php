@@ -1,68 +1,8 @@
 <?php include 'header.php'; ?>
 <?php include 'nav.php'; ?>
 
-
-<!--  BEGIN CONTENT AREA  -->
-        <div id="content" class="main-content">
-            <div class="layout-px-spacing">
-
-                <div class="row layout-top-spacing" id="cancel-row">
-
-                    <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
-                        <div class="widget-content widget-content-area br-6">
-                            <div class="table-responsive mb-4 mt-4">
-                                <table id="html5-extension" class="table table-hover non-hover" style="width:100%">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>flag</th>
-                                            <th>Cases</th>
-                                            <th>todayCases</th>
-                                            <th>deaths</th>
-                                            <th>todayDeaths</th>
-                                            <th>recovered</th>
-                                            <th>active</th>
-                                            <th>critical</th>
-                                            <th>As At</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-
-                                        <?php
-                                        error_reporting(0);
-                                        include 'api.php';
-                                         $data =  json_decode(ReturnAllCases(), false);
-                                         for ($x = 0; $x <= count($data); $x++)
-                                         {
-                                           $epochTime = $data[$x] -> critical ;
-                                            print_r('
-                                            <tr>
-                                                <td>'.($data[$x] -> country) .'</td>
-                                                <td>  <img src="'.$data[$x] -> countryInfo -> flag .'" height="32" width="32"></td>
-                                                <td>'.$data[$x] -> cases .'</td>
-                                                <td>'.$data[$x] -> todayCases. ' </td>
-                                                <td>'.$data[$x] -> deaths .'</td>
-                                                <td>'.$data[$x] -> todayDeaths .'</td>
-                                                <td>'.$data[$x] -> recovered. ' </td>
-                                                <td>'.$data[$x] -> active .'</td>
-                                                <td>'.$data[$x] -> critical .'</td>
-                                                <td>Today '.date('H:i:s', $epochTime) .'</td>
-                                            </tr>
-                                            ');
-                                        }
-                                        ?>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                </div>
-
-        </div>
-        <!--  END CONTENT AREA  -->
-
-
+<iframe width="650" height="400" frameborder="0" scrolling="no"
+  marginheight="0" marginwidth="0" title="2019-nCoV"
+  src="//arcgis.com/apps/Embed/index.html?webmap=14aa9e5660cf42b5b4b546dec6ceec7c&extent=77.3846,11.535,163.5174,52.8632&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light"
+></iframe>
 <?php include 'footer.php'; ?>

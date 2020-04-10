@@ -33,24 +33,11 @@
     <script src="assets/js/dashboard/dash_2.js"></script>
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
 
-    <!-- BEGIN PAGE LEVEL PLUGINS -->
-    <script src="assets/js/scrollspyNav.js"></script>
-    <script src="plugins/jvector/jquery-jvectormap-2.0.3.min.js"></script>
-    <script src="plugins/jvector/africa/jquery-jvectormap-africa-en.js"></script>
-    <script src="plugins/jvector/asia/jquery-jvectormap-asia-en.js"></script>
-    <script src="plugins/jvector/continents/jquery-jvectormap-continents-en.js"></script>
-    <script src="plugins/jvector/europe/jquery-jvectormap-europe-en.js"></script>
-    <script src="plugins/jvector/north_america/jquery-jvectormap-north-america-en.js"></script>
-    <script src="plugins/jvector/oceania/jquery-jvectormap-oceanina-en.js"></script>
-    <script src="plugins/jvector/south-america/jquery-jvectormap-south-america-en.js"></script>
-    <script src="plugins/jvector/worldmap_script/jquery-jvectormap-world-mill-en.js"></script>
-    <!-- END PAGE LEVEL PLUGINS -->
-
     <!--  BEGIN CUSTOM SCRIPTS FILE  -->
     <script src="plugins/jvector/jvector_script.js"></script>
     <!--  END CUSTOM SCRIPTS FILE  -->
 
-        <script src="plugins/table/datatable/datatables.js"></script>
+    <script src="plugins/table/datatable/datatables.js"></script>
     <!-- NOTE TO Use Copy CSV Excel PDF Print Options You Must Include These Files  -->
     <script src="plugins/table/datatable/button-ext/dataTables.buttons.min.js"></script>
     <script src="plugins/table/datatable/button-ext/jszip.min.js"></script>

@@ -18,7 +18,6 @@
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
     <link href="plugins/apex/apexcharts.css" rel="stylesheet" type="text/css">
     <link href="assets/css/dashboard/dash_2.css" rel="stylesheet" type="text/css" />
-    <link href="plugins/jvector/jquery-jvectormap-2.0.3.css" rel="stylesheet" type="text/css" />
     <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
 
     <link rel="stylesheet" type="text/css" href="plugins/table/datatable/datatables.css">
@@ -61,21 +60,21 @@
             <a href="javascript:void(0);" class="sidebarCollapse" data-placement="bottom"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></a>
 
             <div class="nav-logo align-self-center">
-                
+
             </div>
 
             <ul class="navbar-item flex-row mr-auto">
                 <li class="nav-item align-self-center search-animated">
                     <form class="form-inline search-full form-inline search" role="search">
                         <div class="search-bar">
-                            
+
                         </div>
                     </form>
-                    
+
                 </li>
             </ul>
 
-            
+
         </header>
     </div>
     <!--  END NAVBAR  -->
